@@ -3,17 +3,18 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 1100px;
-  height: 293px;
+  margin-top: 90px;
+  margin-bottom: 98px;
 }
 
-.header__link_active {
+.list_item-style {
   padding-bottom: 4px;
   padding-left: 50px;
   text-decoration: none;
 }
 
-.header__links-list-item_active {
- list-style-type: none;
+.header__links-list-item-main {
+  list-style-type: none;
 }
 
 .header__links-list {
@@ -39,8 +40,6 @@
   flex-direction: column;
   justify-self: end;
   align-items: flex-start;
-  padding-right: 87px;
-  padding-bottom: 2px;
   font: inherit;
 }
 
@@ -51,16 +50,22 @@
   font-display: swap;
   line-height: 24.3px;
   text-underline-offset: 4px;
+  padding-right: 87px;
+  padding-bottom: 2px;
+}
+
+.switch_to_new_line {
+  display: block;
 }
 
 .cover {
   position: relative;
-  z-index: -2;
+  z-index: -1;
   width: 1100px;
   min-height: 757px;
   padding-top: 165px;
   padding-left: 50px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -77,11 +82,11 @@
 }
 
 .cover__title {
-  color: #eee;
+  color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 100px;
-  font-style: bold;
+  font-style: normal;
   line-height: 114.99999999999999%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -112,13 +117,11 @@
   flex-direction: row;
   justify-content: space-between;
   width: 1000px;
-  height: 51px;
   padding-top: 106px;
 }
 .cover__description-text {
   align-items: start;
   width: 637px;
-  height: 28px;
   padding-top: 14px;
   color: #eee;
   font-family: Raleway, sans-serif;
@@ -132,9 +135,9 @@
 
 .button {
   width: 256px;
-  height: 51px;
-  border: 1px solid white;
-  color: #eee;
+  min-height: 51px;
+  border: 1px solid #fff;
+  color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 22px;
@@ -144,6 +147,7 @@
   text-align: center;
   text-transform: uppercase;
   background: transparent;
+  cursor: pointer;
 }
 .word-spacing__text {
   word-spacing: 22px;
@@ -176,7 +180,7 @@
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 40px;
-  font-style: bold;
+  font-style: normal;
   line-height: 100%;
   text-transform: uppercase;
 }
@@ -231,18 +235,9 @@
   text-transform: uppercase;
 }
 
-.card-text_type_film {
+.card-text {
   padding-bottom: 48px;
-  color: #eee;
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 120%;
-}
-
-.card-text_type_book {
-  color: #eee;
+  color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -254,34 +249,23 @@
   gap: 40px;
 }
 
-.card-text_type_picture {
-  font-family: Raleway, sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-  line-height: 120%;
-}
-
 .card_picture {
   gap: 137px;
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_type-style {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -299,7 +283,6 @@
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  width: 1052px;
   margin-top: 120px;
   padding: 0 24px;
   padding-top: 30px;
@@ -352,26 +335,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 1100px;
-  height: 180px;
   margin-top: 180px;
 }
 
-.footer_adress {
-  display: flex;
-  flex-direction: column;
-  justify-self: start;
-  align-items: flex-start;
-  padding-left: 50px;
-  font: inherit;
-}
-
-.footer__adress-style {
+.footer__adress {
   font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-display: swap;
   line-height: 24.3px;
   text-underline-offset: 4px;
+  padding-left: 50px;
 }
 
 .footer__menu-list {
