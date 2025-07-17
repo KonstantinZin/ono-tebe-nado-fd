@@ -10,13 +10,11 @@
 .list_item-style {
   padding-bottom: 4px;
   padding-left: 50px;
-  
 }
 
 .header__link_active {
-text-decoration: none;
+  text-decoration: none;
 }
-
 
 .header__links-list-item-main {
   list-style-type: none;
@@ -47,7 +45,7 @@ text-decoration: none;
   align-items: flex-start;
   font: inherit;
   width: 300px;
-    font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
   font-display: swap;
@@ -269,6 +267,7 @@ text-decoration: none;
   font-size: 20px;
   font-style: normal;
   line-height: 100%;
+  text-underline-offset: 4px;
 }
 
 .about {
@@ -331,7 +330,7 @@ text-decoration: none;
 }
 
 .footer__adress {
-padding-right: 10px;
+  padding-right: 10px;
 }
 
 .footer__menu-list {
