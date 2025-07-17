@@ -5,25 +5,30 @@
   width: 1100px;
   margin-top: 90px;
   margin-bottom: 98px;
+  padding: 0 50px;
 }
 
 .list_item-style {
   padding-bottom: 4px;
-  padding-left: 50px;
 }
 
 .header__link_active {
   text-decoration: none;
 }
 
+.header__links-list-item {
+  padding-left: 4px;
+}
+
 .header__links-list-item-main {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .header__links-list {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 29px;
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -43,8 +48,8 @@
   flex-direction: column;
   justify-self: end;
   align-items: flex-start;
+  width: 240px;
   font: inherit;
-  width: 300px;
   font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -54,7 +59,7 @@
 }
 
 .header__adress {
-  padding-right: 60px;
+  padding-right: 25px;
 }
 
 .cover {
@@ -213,8 +218,8 @@
   z-index: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-grow: 1 0 400px;
+  justify-content: space-between;
   height: 100%;
   padding-top: 48px;
   padding-right: 40px;
