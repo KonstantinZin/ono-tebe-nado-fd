@@ -21,8 +21,8 @@
 }
 
 .header__links-list-item-main {
-  list-style-type: none;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .header__links-list {
@@ -335,7 +335,7 @@
 }
 
 .footer__adress {
-  padding-right: 10px;
+  margin-right: 77px;
 }
 
 .footer__menu-list {
